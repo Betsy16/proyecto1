@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300;400;600;700&family=Mulish:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kreon', serif;
+}
+
+header {
+    background-color: rgba(255, 115, 0, 0.514);
+    display: flex;
+    gap: 20px;
+    grid-gap: 20px;
+}
+
+.logo{
+    width: 100px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.menu__item a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu__item.active a {
+    text-decoration: underline double;
+}
+
+.imagenprincipal {
+    height: 80vh;
+    background-image: url("../Huellitas.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 200px;
+}
+
+.imagenprincipal h2 { 
+    color: blue;
+    background-color: rgba(0, 0, 0, 0.062);
+    padding-inline: 15px;
+}
+
+.imagenprincipal p {
+    color: black;
+    text-align: center;
+}
+
+.tarjetitas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tarjetita {
+    background-color: rgba(255, 115, 0, 0.514);
+    border-radius: 50px;
+    overflow: hidden;
+    display: inline-block;
+    padding: 30px;
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+    flex-direction: column;
+    gap: 10px;  
+    flex: 1;
+}
+
+.informacion {
+    padding: 0 20px 20px 20px;
+}
+
+.tarjetita__imagen {
+    max-width: 100%;
+}
+
+.pie {
+    background-color: rgba(255, 115, 0, 0.514);
+    color: white;
+    padding-block: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}

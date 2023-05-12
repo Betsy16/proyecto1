@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300;400;600;700&family=Mulish:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kreon', serif;
+}
+
+header {
+    background-color: rgba(255, 115, 0, 0.514);
+    display: flex;
+    gap: 20px;
+    grid-gap: 20px;
+}
+
+.logo{
+    width: 100px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    grid-gap: 10px;
+}
+
+.menu__item a {
+    background: rgb(255, 255, 255);
+    border: 5px solid white;
+    color: #e96acd;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+
+/******************* PSEUDOCLASES *******************/
+.menu__item:nth-child(2) a {
+    background: #3394a1;
+    border: 5px solid #a13389;
+    color: white;
+}
+
+.menu__item:first-child a {
+    background: rgb(179, 31, 12);
+}
+
+.menu__item:last-child a {
+    background: rgb(179, 31, 12);
+}
+
+.menu__item a:empty {
+    background: rgb(83, 128, 0);
+}
+
+.menu__item a:not(.menu__link) {
+    border-color: rgb(6, 18, 197);
+}
+
+.menu__item a:hover {
+    background: black;
+    color: burlywood;
+}
+
+
+.imagenprincipal {
+    height: 80vh;
+    background-image: url("../Huellitas.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 200px;
+}
+
+
+/********** Pseudoelementos ***********/
+
+.imagenprincipal h2 { 
+    color: blue;
+    background-color: rgba(0, 0, 0, 0.062);
+    padding-inline: 15px;
+}
+
+.imagenPrincipal h2::first-letter {
+    color: #e96acd;
+}
+
+.imagenPrincipal h2::selection {
+    background: #e96acd;
+    color: black;
+}
+
+.imagenprincipal p {
+    color: black;
+    text-align: center;
+}
+
+.imagenPrincipal p::first-line {
+    color: royalblue;
+}
+
+.imagenPrincipal p::selection {
+    background: black;
+    color: royalblue;S
+}
+
+.tarjetitas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tarjetita {
+    background-color: rgba(255, 115, 0, 0.514);
+    border-radius: 50px;
+    overflow: hidden;
+    display: inline-block;
+    padding: 30px;
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+    flex-direction: column;
+    gap: 10px;  
+    flex: 1;
+}
+
+.informacion {
+    padding: 0 20px 20px 20px;
+}
+
+.tarjetita__imagen {
+    max-width: 100%;
+}
+
+.pie {
+    background-color: rgba(255, 115, 0, 0.514);
+    color: white;
+    padding-block: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tarjetitados {
+    flex: 1.5;
+}
